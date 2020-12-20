@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('navbar.css');
+@import url('stars.css');
+
+html, body {
+	height: 100%;
+	background-color: black;
+}
+
+.col-md-12{
+	padding: 0;
+}
+.navbar {
+	text-align: center;
+	font-size: 45px;
+}
+
+svg{
+	border: 1px red solid;
+}
+
+.glyphicon {
+	opacity: 0.3;
+	z-index: 2;
+	color: grey;
+}
+
+.glyphicon:hover {
+	cursor: pointer;
+	color: black;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+.carto {
+	height: 100%;
+	width: 100%;
+	frameborder: 0;
+}
+

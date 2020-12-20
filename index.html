@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.27.0/mapbox-gl.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.27.0/mapbox-gl.css' rel='stylesheet' />
+
+
+		<script src='javascripts/main.js'></script>
+		<link rel='stylesheet' type='text/css' href='stylesheets/main.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>
+	          Beunity
+		</title>
+	</head>
+
+	<body>
+
+
+		<header id="navbar-main" class="navbar navbar-top navbar-fixed-top">
+			<p class="navbar-text mb-0">Be-Unity</p>
+		</header>
+
+		<header id="navbar-arrow" class="navbar navbar-fixed-top topArrow">
+			<div class="glyphicon glyphicon-chevron-up"></div>
+</header>
+
+<aside>
+    <div style="position: absolute; top: 50%; left:50%; width: 55.85%;
+                transform: translate(-50%, -50%); z-index: 999;">
+        <h1 style="font-size: 500%; color: white;">Air Quality Visualizations</h1>
+        <h3 style="font-size: 200%; color: white; text-align: right;">for the masses</h3>
+    </div>
+	<div class="stars"></div>
+	<div class="twinkling"></div>
+	<div class="clouds"></div>
+</aside>
+		<!-- Globe View -->
+		<section class="col-md-12">
+			<div id="container"></div>
+
+			<div class="hide" id="currentInfo">
+				<span id="year1990" class="year">1990</span>
+				<span id="year1995" class="year">1995</span>
+				<span id="year2000" class="year">2000</span>
+			</div>
+
+			<div class="hide" id="title">
+				World Population
+			</div>
+
+		</section>
+
+		<!-- MapBox View -->
+		<section class="col-md-12 mapbox">
+
+			<!--<div id='map'></div>-->
+			<img src="https://api.mapbox.com/styles/v1/hitscotty/civ7hnlic00342iphxnci8kvj/static/-119.050818,36.887194,5.02,0.00,0.00/600x400?access_token=pk.eyJ1IjoiaGl0c2NvdHR5IiwiYSI6ImNpdjdobTVqMDAwMG4ydG04YnhvY2c3ZmYifQ.jcSyTIuRnI6lE2K3uz6pgg" width="100%"height="100%"alt="Basic" />
+
+		</section>
+
+		<!-- Carto View -->
+		<section class="col-md-12">
+			<iframe class="carto" src="https://hitscotty.carto.com/builder/836387e2-a927-11e6-a007-0ee66e2c9693/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		</section>
+
+
+		<!-- Footer arrow -->
+		<footer id="footer-arrow" class="navbar navbar-fixed-bottom">
+			<div class="glyphicon glyphicon-chevron-down"></div>
+		</footer>
+
+		<!-- Globe Scripts -->
+		<script src='modules/0-mapgl/javascripts/main.js'></script>
+		<script type="text/javascript" src="modules/0-mapgl/javascripts/Detector.js"></script>
+		<script type="text/javascript" src="modules/0-mapgl/javascripts/three.min.js"></script>
+		<script type="text/javascript" src="modules/0-mapgl/javascripts/Tween.js"></script>
+		<script type="text/javascript" src="modules/0-mapgl/javascripts/globe.js"></script>
+
+	</body>
+
+</html>

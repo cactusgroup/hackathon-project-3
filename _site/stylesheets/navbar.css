@@ -1,0 +1,13 @@
+@font-face{
+	font-family: zack; 
+	src: url(../modules/fonts/Zacken-Normal.ttf);
+}
+
+.navbar-top{
+  background-color: #16a085;
+  height: 30px;
+  line-height: 25px;
+  font-family: zack;
+   -webkit-border-bottom-right-radius: 3px;
+     -webkit-border-bottom-left-radius: 4px;
+}
